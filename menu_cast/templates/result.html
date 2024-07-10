@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if formatted_menu %}
+    Here you gooo.. have your menu with the detailed reciepe
+        <div class="menu">
+            {{ formatted_menu|safe }}
+        </div>
+    {% else %}
+        <p>No menu available.</p>
+    {% endif %}
+{% endblock %}
